@@ -1,0 +1,106 @@
+Round Robin
+====================================
+<time 0> ---- system idle ----
+<time 1> [new arrival]node 8
+<time 1> node 8 is running
+<time 2> [new arrival]node 5
+<time 2> node 8 is running
+<time 3> [new arrival]node 2
+<time 3> node 8 is running
+<time 4> [new arrival]node 4
+<time 4> node 8 is running
+-----------------context switching
+
+<time 5> [new arrival]node 6
+<time 5> node 5 is running
+<time 6> node 5 is running
+<time 7> [new arrival]node 3
+<time 7> node 5 is running
+<time 8> node 5 is running
+-----------------context switching
+
+<time 9> [new arrival]node 1
+<time 9> node 2 is running
+<time 10> node 2 is running
+<time 11> node 2 is running
+<time 12> node 2 is running
+<time 13> node 2 is finished
+-------------------context switching
+
+<time 13> node 4 is running
+<time 14> node 4 is running
+<time 15> node 4 is running
+<time 16> [new arrival]node 9
+<time 16> node 4 is running
+-----------------context switching
+
+<time 17> node 6 is running
+<time 18> node 6 is running
+<time 19> node 6 is running
+<time 20> node 6 is finished
+-------------------context switching
+
+<time 20> node 3 is running
+<time 21> node 3 is running
+<time 22> node 3 is finished
+-------------------context switching
+
+<time 22> node 1 is running
+<time 23> node 1 is running
+<time 24> node 1 is running
+<time 25> node 1 is running
+-----------------context switching
+
+<time 26> [new arrival]node 7
+<time 26> node 9 is running
+<time 27> node 9 is running
+<time 28> node 9 is running
+<time 29> node 9 is running
+<time 30> node 9 is finished
+-------------------context switching
+
+<time 30> [new arrival]node 10
+<time 30> node 7 is running
+<time 31> node 7 is running
+<time 32> node 7 is finished
+-------------------context switching
+
+<time 32> node 10 is running
+<time 33> node 10 is running
+<time 34> node 10 is running
+<time 35> node 10 is running
+-----------------context switching
+
+<time 36> node 8 is running
+<time 37> node 8 is running
+<time 38> node 8 is finished
+-------------------context switching
+
+<time 38> node 5 is running
+<time 39> node 5 is running
+<time 40> node 5 is running
+<time 41> node 5 is running
+<time 42> node 5 is finished
+-------------------context switching
+
+<time 42> node 4 is running
+<time 43> node 4 is running
+<time 44> node 4 is finished
+-------------------context switching
+
+<time 44> node 1 is running
+<time 45> node 1 is finished
+-------------------context switching
+
+<time 45> node 10 is running
+<time 46> node 10 is running
+<time 47> node 10 is finished
+
+
+<time 47> all node is finished
+-----------------------------------
+-----------------------------------
+Avarage Cpu usage : 97 percent
+Avarage waiting time : 18
+Avarage response time : 19
+Avarage turnaround time : 23
